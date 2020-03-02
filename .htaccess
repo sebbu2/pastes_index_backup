@@ -1,0 +1,11 @@
+AddEncoding compress .Z
+AddEncoding gzip .gz .tgz
+
+RemoveType .gz
+AddType "text/html; charset=UTF-8" .html.br .htm.br .html.gz .htm.gz
+
+RewriteEngine on
+RewriteCond %{HTTP:Accept-Encoding} gzip
+RewriteCond %{DOCUMENT_ROOT}/%{REQUEST_FILENAME} -s
+RewriteCond "%{REQUEST_FILENAME}" "\.gz$"
+RewriteRule ^(.*)$ %{DOCUMENT_ROOT}/%{REQUEST_FILENAME} [E=no-gzip,L]
