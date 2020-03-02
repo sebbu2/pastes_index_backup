@@ -5,8 +5,11 @@ Supported sites
 ===============
 
 https://priv.atebin.com/
+
 https://privatebin.secured.fi/
+
 https://paste.tech-port.de/
+
 https://paste.imirhil.fr/
 
 Planned support
@@ -15,6 +18,7 @@ Planned support
 or to verify
 
 https://privatebin.net/
+
 https://vim.cx/
 
 all others from https://github.com/PrivateBin/PrivateBin/wiki/PrivateBin-Instances-Directory
