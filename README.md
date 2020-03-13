@@ -34,6 +34,8 @@ novels2.txt novels to keep in __others folder
 
 qu_remove.php removes the cache of the 2 urls
 
+qu_continue.php removes incomplete cache for the 2 urls, allowing it to continue from previous state
+
 qu.php retrieve the first url
 
 qu_or.php retrieve the second url
@@ -45,6 +47,8 @@ qu_or2.php parse the second url and retrieve the pastes
 clean.php removes duplicates (pastes that have been replaced to contain more chapters)
 
 no_eq.php in case of keeping both htm and gz, removes orphaned files
+
+ren.php renames folders according to current rules (if they have changed in qu2/qu_or2)
 
 stats.php generates stats
 
