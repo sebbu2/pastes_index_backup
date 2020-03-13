@@ -85,7 +85,19 @@ function cf_formula_calculate($formula){
 	$formula = str_replace(array('+[]'),array('+0'),$formula);
 	$formula = str_replace(array(')+(',')/+('),array(').(',')/('),$formula);
 
-	return eval('return ' . $formula . ';');
+	$res=0;
+	try {
+		$res=eval('return ' . $formula . ';');
+	}
+	catch(ParseError $p) {
+		//var_dump($p->getMessage());
+		//var_dump($formula);
+		//var_dump($res);
+		return $res;
+	}
+	//var_dump($formula);
+	//var_dump($res);
+	return $res;
 }
 
 /**
