@@ -46,6 +46,10 @@ qu_or2.php parse the second url and retrieve the pastes
 
 clean.php removes duplicates (pastes that have been replaced to contain more chapters)
 
+clean2.php removes pastes from novels in the urls but not in the urls
+
+novels3.php lists novels not in the urls
+
 no_eq.php in case of keeping both htm and gz, removes orphaned files
 
 ren.php renames folders according to current rules (if they have changed in qu2/qu_or2)
