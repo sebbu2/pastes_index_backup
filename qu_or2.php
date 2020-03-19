@@ -128,7 +128,7 @@ foreach($links4 as $name => $links2) {
 	$name2=str_replace(array('?'),'', $name2);
 	$name2=preg_replace('#\.+$#','',$name2);
 	if(!file_exists('__others/'.$name2)) {
-		if(!file_exists($name2)) {
+		if(file_exists($name2)) {
 			rename($name2, '__others/'.$name2);
 		}
 		else {
